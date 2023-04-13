@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rodar Dado</title>
+  </head>
+  <body>
+    <h1 id="resultado">?</h1>
+    <button onclick="rodarDado()">Rodar Dado</button>
+    
+    <script>
+      function rodarDado() {
+        const resultadoElement = document.getElementById("resultado");
+        const numeroAleatorio = Math.floor(Math.random() * 6) + 1;
+        resultadoElement.textContent = numeroAleatorio;
+      }
+    </script>
+  </body>
+</html>
